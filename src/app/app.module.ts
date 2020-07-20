@@ -5,18 +5,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { PhonebookComponent } from './phonebook/phonebook.component';
+import {FormsModule} from '@angular/forms';
+import { AuthService } from './login/auth.service';
+import { AuthGaurd } from './auth-gaurd.service';
+import { LoginGaurdService } from './login-gaurd.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    NavbarComponent
+    NavbarComponent,
+    PhonebookComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AuthService,AuthGaurd,LoginGaurdService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -20,7 +20,8 @@ import { LoginGaurdService } from './login-gaurd.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [AuthService,AuthGaurd,LoginGaurdService],
   bootstrap: [AppComponent]

@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
 
   isAuthenticated : boolean = false;
 
-  Onsubmit(form : NgForm)
+  onSubmit(form : NgForm)
   {
     this.username = form.value["username"];
     this.password = form.value["password"];

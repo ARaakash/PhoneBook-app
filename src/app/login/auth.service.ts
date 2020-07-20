@@ -7,8 +7,8 @@ import { Router } from '@angular/router';
 export class AuthService {
 
   LoginStatus = new Subject<boolean>();
-  username = "Aakash";
-  password = "Password";
+  username = "aakash";
+  password = "aakash";
 
 
   constructor(private router : Router) { }
